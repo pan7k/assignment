@@ -1,0 +1,40 @@
+[data-theme-name="main"] .menuItem {
+  @apply cursor-pointer select-none bg-surface-x-low flex items-center justify-between gap-4 hover:bg-state-default-hover active:bg-gray-300;
+  border-radius: var(--dimension-radius-menu);
+}
+
+[data-theme-name="main"] .menuItem-primary {
+  @apply text-content-on-neutral-xx-high;
+}
+
+[data-theme-name="main"] .menuItem-secondary {
+  @apply text-content-on-neutral-low;
+}
+
+[data-theme-name="main"] .menuItem-danger {
+  @apply text-[var(--color-content-on-neutral-danger)];
+}
+
+[data-theme-name="main"] .menuItem-xs {
+  @apply pt-[5px] pr-[16px] pb-[5px] pl-[16px];
+}
+
+[data-theme-name="main"] .menuItem-sm {
+  @apply pt-[9px] pr-[16px] pb-[9px] pl-[16px];
+}
+
+[data-theme-name="main"] .menuItem-md {
+  @apply pt-[12.5px] pr-[16px] pb-[12.5px] pl-[16px];
+}
+
+[data-theme-name="main"] .menuItem-lg {
+  @apply pt-[14.5px] pr-[16px] pb-[14.5px] pl-[16px];
+}
+
+[data-theme-name="main"] .menuItem-xl {
+  @apply pt-[14px] pr-[16px] pb-[14px] pl-[16px];
+}
+
+[data-theme-name="main"] .menuItem-highlighted {
+  @apply bg-state-default-hover;
+}

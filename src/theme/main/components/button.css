@@ -1,0 +1,60 @@
+[data-theme-name="main"] .button {
+  @apply text-content-on-neutral-medium inline-flex text-start font-sans cursor-pointer border border-transparent flex-shrink-0 relative select-none gap-2;
+  border-radius: var(--dimension-radius-button);
+}
+
+[data-theme-name="main"] .button-label {
+  @apply cursor-pointer;
+}
+
+[data-theme-name="main"] .button:focus  {
+  @apply outline-2 outline-state-default-focus;
+  z-index: 1000;
+}
+
+[data-theme-name="main"] .button-icon {
+  @apply flex items-center justify-center mt-[3px];
+}
+
+/* Variants */
+[data-theme-name="main"] .button-filled-primary {
+  @apply bg-surface-brand text-surface-x-low hover:bg-blue-800 active:bg-blue-900;
+}
+
+[data-theme-name="main"] .button-filled-danger {
+  @apply bg-surface-danger text-surface-x-low hover:bg-red-800 active:bg-red-900;
+}
+
+[data-theme-name="main"] .button-outline-primary {
+  @apply border border-surface-brand text-surface-brand hover:bg-surface-brand hover:text-surface-x-low active:bg-blue-900;
+}
+
+[data-theme-name="main"] .button-outline-danger {
+  @apply border border-surface-danger text-surface-danger hover:bg-surface-danger hover:text-surface-x-low active:bg-red-900;
+}
+
+/* Sizes */
+[data-theme-name="main"] .button-xs {
+  @apply py-[4px] px-[16px];
+}
+
+[data-theme-name="main"] .button-sm {
+  @apply py-[8px] px-[16px];
+}
+
+[data-theme-name="main"] .button-md {
+  @apply py-[12px] px-[16px];
+}
+
+[data-theme-name="main"] .button-lg {
+  @apply p-[16px];
+}
+
+[data-theme-name="main"] .button-xl {
+  @apply min-h-[4.2rem] p-[16px];
+}
+
+/* States */
+[data-theme-name="main"] .button-disabled {
+  @apply bg-gray-200 text-gray-400 border-none cursor-not-allowed opacity-50;
+}

@@ -1,0 +1,12 @@
+/* Main theme */
+
+@import "./main.css";
+@import "./dark.css";
+
+@import "./components/button.css";
+@import "./components/chip.css";
+@import "./components/input.css";
+@import "./components/menuItem.css";
+@import "./components/menuList.css";
+@import "./components/typography.css";
+@import "./components/select.css";

@@ -1,12 +1,11 @@
 import React from "react";
 import { Preview } from "@storybook/react";
-import { App } from "../core/storybook/decorators";
-import { themes } from "../core/theme/themes";
+import { App } from "../src/storybook/decorators";
+import { themes } from "../src/theme/themes";
 import { dark, light } from "./theme";
 
-import "@fontsource/inter/400.css";
-import "@fontsource/inter/500.css";
-import "@fontsource/inter/600.css";
+import "@fontsource-variable/inter/index.css";
+import "../src/index.css";
 
 const preview: Preview = {
   globalTypes: {
@@ -24,7 +23,7 @@ const preview: Preview = {
     },
   },
   initialGlobals: {
-    theme: "fluid",
+    theme: "main",
     themeVariant: "light",
   },
   parameters: {

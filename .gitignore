@@ -1,5 +1,6 @@
 bun.lockb
 dist
 node_modules
-stats.html
 storybook-static
+stats.html
+bundle-analysis.html

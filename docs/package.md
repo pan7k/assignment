@@ -1,7 +1,7 @@
 <br>
-<img src="https://github.com/pan7k/fluid/blob/main/docs/fluid.svg" />
+<img src="https://github.com/pan7k/assignment/blob/main/docs/logo.svg" />
 
-### Fluid
+### Assignment
 
 Component library
 
@@ -22,8 +22,8 @@ Next, place the `.env` file in your project's root directory and fill it in by a
 GITHUB_TOKEN=
 ```
 
-Finally, add the **@pan7k/fluid** dependency to your `package.json` and run `bun i` to install the package.
+Finally, add the **@pan7k/assignment** dependency to your `package.json` and run `bun i` to install the package.
 
 #### License
 
-© 2024 Tomáš Pánik. All rights reserved.<br>
+UNLICENSED<br>

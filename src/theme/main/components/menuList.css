@@ -1,0 +1,29 @@
+[data-theme-name="main"] .menuList {
+  @apply z-[1000] fixed border-2 border-state-default-focus p-px bg-surface-x-low max-h-[300px] overflow-y-auto;
+  border-radius: var(--dimension-radius-input);
+}
+
+[data-theme-name="main"] .menuList-scrollbar {
+  @apply overflow-y-auto;
+}
+
+[data-theme-name="main"] .menuList-scrollbar::-webkit-scrollbar {
+  @apply w-[8px];
+}
+
+[data-theme-name="main"] .menuList-scrollbar::-webkit-scrollbar-track {  
+  @apply bg-transparent;
+}
+
+[data-theme-name="main"] .menuList-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-[var(--color-state-default-focus)] border border-solid border-[var(--color-surface-x-low)];
+  border-left-width: 4px;
+}
+
+[data-theme-name="main"] .menuList-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-[var(--color-content-on-neutral-medium)] rounded-none;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}

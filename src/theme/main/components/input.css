@@ -1,0 +1,128 @@
+[data-theme-name="main"] .input {
+  @apply font-sans select-none;
+}
+
+[data-theme-name="main"] .input-stack:has(.input-input:-webkit-autofill) {
+  background-color: rgb(250, 255, 189);
+}
+
+[data-theme-name="main"] .input-input {
+  @apply flex-grow border-none outline-none bg-none text-content-on-neutral-xx-high w-full caret-surface-brand;
+}
+
+[data-theme-name="fluid"] .input-input::placeholder {
+  @apply text-content-on-neutral-low;
+}
+
+[data-theme-name="main"] .input-icon {
+  @apply text-content-on-neutral-low;
+}
+
+[data-theme-name="main"] .input-stack {
+  @apply flex items-center w-full gap-2;
+  border-radius: var(--dimension-radius-input);
+}
+
+[data-theme-name="main"] .input-text {
+  @apply cursor-default text-content-on-neutral-xx-high;
+  font-size: var(--font-body-m-size);
+  font-weight: var(--font-body-m-weight);
+  line-height: var(--font-body-m-line-height);
+  letter-spacing: var(--font-body-m-letter-spc);
+}
+
+[data-theme-name="main"] .input-text-label {
+  @apply text-content-on-neutral-xx-high;
+  font-size: var(--font-label-m-size);
+  font-weight: var(--font-label-m-weight);
+  line-height: var(--font-label-m-line-height);
+  letter-spacing: var(--font-label-m-letter-spc);
+}
+
+[data-theme-name="main"] .input-text-label-append {
+  @apply text-content-on-neutral-low;
+  font-size: var(--font-label-s-size);
+  font-weight: var(--font-label-s-weight);
+  line-height: var(--font-label-s-line-height);
+  letter-spacing: var(--font-label-s-letter-spc);
+}
+
+[data-theme-name="main"] .input-text-description {
+  @apply text-content-on-neutral-low;
+}
+
+[data-theme-name="main"] .input-text-warning {
+  @apply text-surface-warning;
+}
+
+[data-theme-name="main"] .input-text-invalid {
+  @apply text-surface-danger;
+}
+
+/* Variants */
+
+[data-theme-name="main"] .input-normal {
+  @apply flex flex-col gap-2;
+}
+
+[data-theme-name="main"] .input-normal-stack {
+  @apply flex items-center px-[10px] py-[8px] outline outline-surface-x-high;
+}
+
+[data-theme-name="main"] .input-normal-stack:focus-within {
+  @apply outline-[3px] outline-state-default-focus;
+  outline-offset: -2px;
+  z-index: 1000;
+}
+
+/* Sizes */
+
+[data-theme-name="main"] .input-xs-stack {
+  @apply px-[10px] py-[4px];
+}
+
+[data-theme-name="main"] .input-xs-input {
+  @apply h-[22px] text-[0.75rem];
+}
+
+[data-theme-name="main"] .input-sm-stack {
+  @apply px-[10px] py-[6px];
+}
+
+[data-theme-name="main"] .input-sm-input {
+  @apply h-[26px];
+}
+
+[data-theme-name="main"] .input-md-input {
+  @apply h-[30px];
+}
+
+[data-theme-name="main"] .input-lg-text {
+  @apply text-[0.8rem];
+}
+
+[data-theme-name="main"] .input-lg-input {
+  @apply h-[33px];
+}
+
+/* States */
+
+[data-theme-name="main"] .input-optional-text {
+  @apply text-content-on-neutral-low;
+}
+
+[data-theme-name="main"] .input-required-text {
+  @apply text-content-on-neutral-low;
+}
+
+[data-theme-name="main"] .input-disabled-text {
+  @apply text-content-on-neutral-low;
+}
+
+[data-theme-name="main"] .input-disabled-input {
+  @apply text-content-on-neutral-low;
+}
+
+[data-theme-name="main"] .input-disabled-icon {
+  @apply text-content-on-neutral-low;
+}

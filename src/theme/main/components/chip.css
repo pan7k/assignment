@@ -1,0 +1,48 @@
+[data-theme-name="main"] .chip {
+  @apply flex items-center gap-1 w-fit cursor-default select-none;
+  border-radius: var(--dimension-radius-chip);
+}
+
+[data-theme-name="main"] .chip-filled-primary {
+  @apply text-surface-x-low bg-surface-brand;
+}
+
+[data-theme-name="main"] .chip-filled-secondary {
+  @apply text-surface-x-low bg-surface-x-high;
+}
+
+[data-theme-name="main"] .chip-filled-danger {
+  @apply text-surface-x-low bg-surface-danger;
+}
+
+[data-theme-name="main"] .chip-light-primary {
+  @apply text-surface-brand bg-content-on-neutral-low;
+}
+
+[data-theme-name="main"] .chip-light-secondary {
+  @apply text-content-on-neutral-xx-high bg-content-on-neutral-low;
+}
+
+[data-theme-name="main"] .chip-light-danger {
+  @apply text-surface-danger bg-content-on-neutral-low;
+}
+
+[data-theme-name="main"] .chip-xs {
+  @apply px-[3px] py-[1px];
+  font-size: var(--font-label-s-size);
+}
+
+[data-theme-name="main"] .chip-sm {
+  @apply px-[5px] py-[3px];
+  font-size: var(--font-label-s-size);
+}
+
+[data-theme-name="main"] .chip-md {
+  @apply px-[7px] py-[3px];
+  font-size: var(--font-body-m-size);
+}
+
+[data-theme-name="main"] .chip-lg {
+  @apply px-[19px] py-[5px];
+  font-size: var(--font-body-m-size);
+}

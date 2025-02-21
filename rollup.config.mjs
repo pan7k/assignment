@@ -1,11 +1,12 @@
+import autoprefixer from "autoprefixer";
 import replace from "@rollup/plugin-replace";
-import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import commonjs from "@rollup/plugin-commonjs";
 import terser from "@rollup/plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
+import postcss from "rollup-plugin-postcss";
+import tailwindcss from "tailwindcss";
 import { visualizer } from "rollup-plugin-visualizer";
 import { createRequire } from "node:module";
 
@@ -14,7 +15,7 @@ const packageJson = requireFile("./package.json");
 
 export default [
   {
-    input: "core/index.ts",
+    input: "src/index.ts",
     output: [
       {
         file: packageJson.main,
@@ -27,11 +28,15 @@ export default [
         sourcemap: true,
       },
       {
-        file: "dist/fluid.js",
+        file: "dist/index.js",
         format: "umd",
-        name: "Fluid",
+        name: "Assignment",
         globals: {
           react: "React",
+          "react-dom": "ReactDOM",
+          "@phosphor-icons/react": "PhosphorIcons",
+          clsx: "clsx",
+          "tailwind-merge": "twMerge",
         },
         plugins: [
           replace({
@@ -42,17 +47,20 @@ export default [
     ],
     plugins: [
       peerDepsExternal(),
-      resolve(),
       commonjs(),
       typescript({
         tsconfig: "tsconfig.build.json",
       }),
       postcss({
-        extensions: [".css"],
+        plugins: [(tailwindcss, autoprefixer)],
+        inject: false,
+        minimize: true,
+        extract: "index.css",
       }),
       visualizer({ template: "sunburst" }),
       terser(),
     ],
+    external: ["react-router-dom"],
   },
   {
     input: "dist/index.d.ts",

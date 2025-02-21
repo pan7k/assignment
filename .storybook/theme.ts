@@ -1,10 +1,10 @@
 import { create } from "@storybook/theming/create";
 
 const brand = {
-  company: "Panik",
-  product: "Fluid",
-  logo: "fluid.svg",
-  repository: "https://github.com/pan7k/fluid",
+  company: "Tomáš Pánik",
+  product: "Assignment",
+  logo: "logo.svg",
+  repository: "https://github.com/pan7k/assignment",
 };
 
 const common = {

@@ -16,18 +16,32 @@ const config: StorybookConfig = {
     "@storybook/addon-themes",
     "@storybook/addon-viewport",
     "@storybook/addon-a11y",
+    "@storybook/addon-styling-webpack",
+    {
+      name: "@storybook/addon-postcss",
+      options: {
+        cssLoaderOptions: {
+          importLoaders: 1,
+        },
+        postcssLoaderOptions: {
+          implementation: require("postcss"),
+        },
+      },
+    },
   ],
   core: {
     disableWhatsNewNotifications: true,
     disableTelemetry: true,
   },
   docs: {
-    autodocs: "tag",
     defaultName: "Overview",
   },
   framework: "@storybook/react-webpack5",
   staticDirs: ["../public"],
-  stories: ["../core/stories/**/*.mdx", "../core/stories/**/*.stories.tsx"],
+  stories: ["../src/stories/**/*.stories.tsx"],
+  typescript: {
+    reactDocgen: "react-docgen-typescript",
+  },
 };
 
 export default config;

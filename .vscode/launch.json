@@ -6,7 +6,7 @@
 			"type": "node-terminal",
 			"request": "launch",
 			"cwd": "${workspaceRoot}",
-			"command": "bun start",
+			"command": "yarn start:storybook",
 		}
 	]
 }

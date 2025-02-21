@@ -1,0 +1,70 @@
+[data-theme-name="main"] {
+  --core-gray-950: #2C2C31;
+  --core-gray-500: #8C8C9A;
+  --core-gray-300: #C9C9CE;
+  --core-gray-00: #FFFFFF;
+  --o2-blue-500: #0050FF;
+  --core-red-600: #DC2828;
+  --core-red-100: #FFDCDC;
+  --core-yellow-700: #A56315;
+  --core-yellow-100: #FAF1B6;
+  --core-alpha-dim-800: #1A1A1ACC;
+  --core-alpha-dim-50: #1A1A1A0F;
+
+  /* surface colors */
+  --color-surface-x-high: var(--core-gray-500);
+  --color-surface-x-low: var(--core-gray-00);
+  --color-surface-brand: var(--o2-blue-500);
+  --color-surface-danger: var(--core-red-600);
+  --color-surface-danger-variant: var(--core-red-100);
+  --color-surface-warning: var(--core-yellow-700);
+  --color-surface-warning-variant: var(--core-yellow-100);
+
+  /* content colors */
+  --color-content-on-neutral-xx-high: var(--core-gray-950);
+  --color-content-on-neutral-medium: var(--core-gray-500);
+  --color-content-on-neutral-low: var(--core-gray-300);
+  --color-content-on-neutral-danger: var(--core-red-600);
+  --color-content-on-neutral-warning: var(--core-yellow-700);
+
+  /* state colors */
+  --color-state-default-hover: var(--core-alpha-dim-50);
+  --color-state-default-focus: var(--core-alpha-dim-800);
+
+  /* font */
+  --font-sans: 'Inter', sans-serif;
+
+  /* label m */
+  --font-label-m-size: 16px;
+  --font-label-m-weight: 500;
+  --font-label-m-line-height: 22px;
+  --font-label-m-letter-spc: 0.16px;
+
+  /* label s */
+  --font-label-s-size: 14px;
+  --font-label-s-weight: 550;
+  --font-label-s-line-height: 17px;
+  --font-label-s-letter-spc: 0.16px;
+
+  /* body m */
+  --font-body-m-size: 16px;
+  --font-body-m-weight: 400;
+  --font-body-m-line-height: 22px;
+  --font-body-m-letter-spc: 0.01px;
+
+  /* radius */
+  --dimension-radius-input: 12px;
+  --dimension-radius-button: 12px;
+  --dimension-radius-menu: 10px;
+  --dimension-radius-chip: 10px;
+
+  /* stroke */
+  --dimension-stroke-s: 1px;
+  --dimension-stroke-l: 3px;
+  
+  /* spacing */
+  --dimension-xs: 8px;
+  --dimension-s: 12px;
+  --dimension-m: 16px;
+  --dimension-l: 20px;
+}

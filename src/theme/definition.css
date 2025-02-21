@@ -1,0 +1,78 @@
+/* Theme definition */
+
+:root {
+  --blank: initial;
+}
+
+@theme {
+  --core-gray-950: var(--blank);
+  --core-gray-500: var(--blank);
+  --core-gray-300: var(--blank);
+  --core-gray-00: var(--blank);
+  --o2-blue-500: var(--blank);
+  --core-red-600: var(--blank);
+  --core-red-100: var(--blank);
+  --core-yellow-700: var(--blank);
+  --core-yellow-100: var(--blank);
+  --core-alpha-dim-800: var(--blank);
+  --core-alpha-dim-50: var(--blank);
+
+  /* surface colors */
+  --color-surface-x-high: var(--blank);
+  --color-surface-x-low: var(--blank);
+  --color-surface-brand: var(--blank);
+  --color-surface-danger: var(--blank);
+  --color-surface-success: var(--blank);
+  --color-surface-success-variant: var(--blank);
+  --color-surface-danger-variant: var(--blank);
+  --color-surface-warning: var(--blank);
+  --color-surface-warning-variant: var(--blank);
+
+  /* content colors */
+  --color-content-on-neutral-xx-high: var(--blank);
+  --color-content-on-neutral-medium: var(--blank);
+  --color-content-on-neutral-low: var(--blank);
+  --color-content-on-neutral-danger: var(--blank);
+  --color-content-on-neutral-warning: var(--blank);
+
+  /* state colors */
+  --color-state-default-hover: var(--blank);
+  --color-state-default-focus: var(--blank);
+
+  /* font */
+  --font-sans: var(--blank);
+
+  /* label m */
+  --font-label-m-size: var(--blank);
+  --font-label-m-weight: var(--blank);
+  --font-label-m-line-height: var(--blank);
+  --font-label-m-letter-spc: var(--blank);
+
+  /* label s */
+  --font-label-s-size: var(--blank);
+  --font-label-s-weight: var(--blank);
+  --font-label-s-line-height: var(--blank);
+  --font-label-s-letter-spc: var(--blank);
+
+  /* body m */
+  --font-body-m-size: var(--blank);
+  --font-body-m-weight: var(--blank);
+  --font-body-m-line-height: var(--blank);
+  --font-body-m-letter-spc: var(--blank);
+
+  /* radius */
+  --dimension-radius-input: var(--blank);
+  --dimension-radius-button: var(--blank);
+  --dimension-radius-menu: var(--blank);
+  --dimension-radius-chip: var(--blank);
+
+  /* stroke */
+  --dimension-stroke-s: 1px;
+  --dimension-stroke-l: 3px;
+  
+  /* spacing */
+  --dimension-xs: var(--blank);
+  --dimension-s: var(--blank);
+  --dimension-m: var(--blank);
+  --dimension-l: var(--blank);
+}

@@ -1,0 +1,32 @@
+[data-theme-name="main"] .typography {
+  @apply font-sans;
+}
+
+[data-theme-name="main"] .typography-body-m {
+  font-size: var(--font-body-m-size);
+  font-weight: var(--font-body-m-weight);
+  line-height: var(--font-body-m-line-height);
+  letter-spacing: var(--font-body-m-letter-spc);
+}
+
+[data-theme-name="main"] .typography-label-m {
+  font-size: var(--font-label-m-size);
+  font-weight: var(--font-label-m-weight);
+  line-height: var(--font-label-m-line-height);
+  letter-spacing: var(--font-label-m-letter-spc);
+}
+
+[data-theme-name="main"] .typography-label-s {
+  font-size: var(--font-label-s-size);
+  font-weight: var(--font-label-s-weight);
+  line-height: var(--font-label-s-line-height);
+  letter-spacing: var(--font-label-s-letter-spc);
+}
+
+[data-theme-name="main"] .typography-warning {
+  @apply text-content-on-neutral-warning;
+}
+
+[data-theme-name="main"] .typography-danger {
+  @apply text-content-on-neutral-danger;
+}
