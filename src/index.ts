@@ -29,4 +29,3 @@ export { themes, type ThemeDefinition } from "./theme/themes";
 
 /* Typography */
 export { Text, type TextProps } from "./typography/Text";
-export { Label, type LabelProps } from "./typography/Label";
